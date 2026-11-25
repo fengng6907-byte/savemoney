@@ -1,0 +1,1199 @@
+[
+  {
+    "id": "pregnancy_test_purchase",
+    "storyId": "baby",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/pregnancy_test_purchase.svg",
+    "poster": "assets/posters/pregnancy_test_purchase.svg",
+    "durationMs": 4300,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "A test kit on the table. Nothing has been confirmed.",
+    "characterIds": [
+      "player",
+      "assistant"
+    ],
+    "environmentId": "home",
+    "nextAction": "dialogue",
+    "title": "A little anticipation",
+    "description": "A test kit on the table. Nothing has been confirmed.",
+    "support": "assistant",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/pregnancy_test_purchase.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/pregnancy_test_purchase.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/pregnancy_test_purchase.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/pregnancy_test_purchase.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "pregnancy_test_positive",
+    "storyId": "baby",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/pregnancy_test_positive.svg",
+    "poster": "assets/posters/pregnancy_test_positive.svg",
+    "durationMs": 7000,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "Wait… is that what I think it is?",
+    "characterIds": [
+      "player",
+      "partner"
+    ],
+    "environmentId": "home",
+    "nextAction": "dialogue",
+    "title": "A little adventure begins",
+    "description": "Wait… is that what I think it is?",
+    "support": "partner",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/pregnancy_test_positive.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/pregnancy_test_positive.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/pregnancy_test_positive.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/pregnancy_test_positive.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "pregnancy_consultation",
+    "storyId": "baby",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/pregnancy_consultation.svg",
+    "poster": "assets/posters/pregnancy_consultation.svg",
+    "durationMs": 6500,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "A fictional clinic visit opens a conversation about care.",
+    "characterIds": [
+      "player",
+      "doctor"
+    ],
+    "environmentId": "clinic",
+    "nextAction": "dialogue",
+    "title": "One step at a time",
+    "description": "A fictional clinic visit opens a conversation about care.",
+    "support": "doctor",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/pregnancy_consultation.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/pregnancy_consultation.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/pregnancy_consultation.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/pregnancy_consultation.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "pregnancy_twins_reveal",
+    "storyId": "baby",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/pregnancy_twins_reveal.svg",
+    "poster": "assets/posters/pregnancy_twins_reveal.svg",
+    "durationMs": 7500,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "Two illustrative shapes appear on the story ultrasound.",
+    "characterIds": [
+      "player",
+      "doctor"
+    ],
+    "environmentId": "clinic",
+    "nextAction": "dialogue",
+    "title": "An unexpected pair",
+    "description": "Two illustrative shapes appear on the story ultrasound.",
+    "support": "doctor",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/pregnancy_twins_reveal.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/pregnancy_twins_reveal.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/pregnancy_twins_reveal.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/pregnancy_twins_reveal.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "baby_preparation",
+    "storyId": "baby",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/baby_preparation.svg",
+    "poster": "assets/posters/baby_preparation.svg",
+    "durationMs": 5500,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "A corner becomes a nursery, one thoughtful item at a time.",
+    "characterIds": [
+      "player",
+      "partner"
+    ],
+    "environmentId": "home",
+    "nextAction": "dialogue",
+    "title": "Making a little room",
+    "description": "A corner becomes a nursery, one thoughtful item at a time.",
+    "support": "partner",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/baby_preparation.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/baby_preparation.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/baby_preparation.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/baby_preparation.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "car_showroom",
+    "storyId": "car",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/car_showroom.svg",
+    "poster": "assets/posters/car_showroom.svg",
+    "durationMs": 6000,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "A salesperson shows you around a virtual car.",
+    "characterIds": [
+      "player",
+      "agent"
+    ],
+    "environmentId": "showroom",
+    "nextAction": "dialogue",
+    "title": "A possible new road",
+    "description": "A salesperson shows you around a virtual car.",
+    "support": "agent",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/car_showroom.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/car_showroom.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/car_showroom.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/car_showroom.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "car_delivery",
+    "storyId": "car",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/car_delivery.svg",
+    "poster": "assets/posters/car_delivery.svg",
+    "durationMs": 6500,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "A virtual handover. The road ahead brings responsibilities.",
+    "characterIds": [
+      "player",
+      "agent"
+    ],
+    "environmentId": "showroom",
+    "nextAction": "dialogue",
+    "title": "Keys to a new chapter",
+    "description": "A virtual handover. The road ahead brings responsibilities.",
+    "support": "agent",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/car_delivery.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/car_delivery.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/car_delivery.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/car_delivery.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "car_maintenance",
+    "storyId": "car",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/car_maintenance.svg",
+    "poster": "assets/posters/car_maintenance.svg",
+    "durationMs": 5500,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "A mechanic checks the car and explains the work.",
+    "characterIds": [
+      "player",
+      "mechanic"
+    ],
+    "environmentId": "showroom",
+    "nextAction": "dialogue",
+    "title": "Care keeps it going",
+    "description": "A mechanic checks the car and explains the work.",
+    "support": "mechanic",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/car_maintenance.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/car_maintenance.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/car_maintenance.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/car_maintenance.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "car_battery_failure",
+    "storyId": "car",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/car_battery_failure.svg",
+    "poster": "assets/posters/car_battery_failure.svg",
+    "durationMs": 6500,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "You try the ignition. The dashboard flickers, then falls quiet.",
+    "characterIds": [
+      "player",
+      "mechanic"
+    ],
+    "environmentId": "showroom",
+    "nextAction": "dialogue",
+    "title": "A reluctant start",
+    "description": "You try the ignition. The dashboard flickers, then falls quiet.",
+    "support": "mechanic",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/car_battery_failure.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/car_battery_failure.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/car_battery_failure.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/car_battery_failure.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "property_showroom",
+    "storyId": "home",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/property_showroom.svg",
+    "poster": "assets/posters/property_showroom.svg",
+    "durationMs": 6000,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "The agent unfolds a floor plan. You imagine a life here.",
+    "characterIds": [
+      "player",
+      "agent"
+    ],
+    "environmentId": "apartment",
+    "nextAction": "dialogue",
+    "title": "A door not yet opened",
+    "description": "The agent unfolds a floor plan. You imagine a life here.",
+    "support": "agent",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/property_showroom.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/property_showroom.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/property_showroom.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/property_showroom.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "property_water_leak",
+    "storyId": "home",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/property_water_leak.svg",
+    "poster": "assets/posters/property_water_leak.svg",
+    "durationMs": 6500,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "Rain taps the window. A drip sends you looking for a bucket.",
+    "characterIds": [
+      "player",
+      "contractor"
+    ],
+    "environmentId": "apartment",
+    "nextAction": "dialogue",
+    "title": "A mark on the ceiling",
+    "description": "Rain taps the window. A drip sends you looking for a bucket.",
+    "support": "contractor",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/property_water_leak.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/property_water_leak.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/property_water_leak.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/property_water_leak.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "travel_departure",
+    "storyId": "travel",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/travel_departure.svg",
+    "poster": "assets/posters/travel_departure.svg",
+    "durationMs": 5000,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "A suitcase closes. A new place is waiting.",
+    "characterIds": [
+      "player",
+      "partner"
+    ],
+    "environmentId": "home",
+    "nextAction": "dialogue",
+    "title": "A little further from home",
+    "description": "A suitcase closes. A new place is waiting.",
+    "support": "partner",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/travel_departure.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/travel_departure.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/travel_departure.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/travel_departure.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "wedding_planning",
+    "storyId": "wedding",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/wedding_planning.svg",
+    "poster": "assets/posters/wedding_planning.svg",
+    "durationMs": 5500,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "Two people make room for the details they care about.",
+    "characterIds": [
+      "player",
+      "agent"
+    ],
+    "environmentId": "home",
+    "nextAction": "dialogue",
+    "title": "A day that feels like you",
+    "description": "Two people make room for the details they care about.",
+    "support": "agent",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/wedding_planning.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/wedding_planning.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/wedding_planning.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/wedding_planning.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "business_first_order",
+    "storyId": "business",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/business_first_order.svg",
+    "poster": "assets/posters/business_first_order.svg",
+    "durationMs": 5500,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "An assistant brings a parcel and a new possibility.",
+    "characterIds": [
+      "player",
+      "assistant"
+    ],
+    "environmentId": "apartment",
+    "nextAction": "dialogue",
+    "title": "A little idea takes shape",
+    "description": "An assistant brings a parcel and a new possibility.",
+    "support": "assistant",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/business_first_order.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/business_first_order.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/business_first_order.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/business_first_order.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "education_new_page",
+    "storyId": "education",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/education_new_page.svg",
+    "poster": "assets/posters/education_new_page.svg",
+    "durationMs": 5000,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "You open a letter and gather your books.",
+    "characterIds": [
+      "player",
+      "assistant"
+    ],
+    "environmentId": "home",
+    "nextAction": "dialogue",
+    "title": "A new page to learn from",
+    "description": "You open a letter and gather your books.",
+    "support": "assistant",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/education_new_page.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/education_new_page.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/education_new_page.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/education_new_page.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "living_move_in",
+    "storyId": "living",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/living_move_in.svg",
+    "poster": "assets/posters/living_move_in.svg",
+    "durationMs": 5500,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "Boxes at the door. A room waiting to become home.",
+    "characterIds": [
+      "player",
+      "partner"
+    ],
+    "environmentId": "apartment",
+    "nextAction": "dialogue",
+    "title": "A window of your own",
+    "description": "Boxes at the door. A room waiting to become home.",
+    "support": "partner",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/living_move_in.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/living_move_in.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/living_move_in.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/living_move_in.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "retirement_morning",
+    "storyId": "retirement",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/retirement_morning.svg",
+    "poster": "assets/posters/retirement_morning.svg",
+    "durationMs": 5000,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "A quiet cup of tea and a conversation with family.",
+    "characterIds": [
+      "player",
+      "family"
+    ],
+    "environmentId": "home",
+    "nextAction": "dialogue",
+    "title": "A slower morning",
+    "description": "A quiet cup of tea and a conversation with family.",
+    "support": "family",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/retirement_morning.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/retirement_morning.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/retirement_morning.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/retirement_morning.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "emergency_small_surprise",
+    "storyId": "emergency",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/emergency_small_surprise.svg",
+    "poster": "assets/posters/emergency_small_surprise.svg",
+    "durationMs": 5000,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "Something needs care. You pause and look at the options.",
+    "characterIds": [
+      "player",
+      "contractor"
+    ],
+    "environmentId": "apartment",
+    "nextAction": "dialogue",
+    "title": "An ordinary little surprise",
+    "description": "Something needs care. You pause and look at the options.",
+    "support": "contractor",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/emergency_small_surprise.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/emergency_small_surprise.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/emergency_small_surprise.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/emergency_small_surprise.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "milestone_completion",
+    "storyId": "shared",
+    "version": 1,
+    "category": "completion",
+    "assetType": "svg",
+    "source": "assets/animations/milestone_completion.svg",
+    "poster": "assets/posters/milestone_completion.svg",
+    "durationMs": 8000,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "A warm celebration of a completed savings checkpoint.",
+    "characterIds": [
+      "player",
+      "partner"
+    ],
+    "environmentId": "home",
+    "nextAction": "dialogue",
+    "title": "A page lived",
+    "description": "A warm celebration of a completed savings checkpoint.",
+    "support": "partner",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/milestone_completion.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/milestone_completion.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "page_turn",
+    "storyId": "shared",
+    "version": 1,
+    "category": "progression",
+    "assetType": "svg",
+    "source": "assets/animations/page_turn.svg",
+    "poster": "assets/posters/page_turn.svg",
+    "durationMs": 2000,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "A quiet transition between story pages.",
+    "characterIds": [
+      "player",
+      "partner"
+    ],
+    "environmentId": "home",
+    "nextAction": "dialogue",
+    "title": "Another page",
+    "description": "A quiet transition between story pages.",
+    "support": "partner",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/page_turn.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/page_turn.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/page_turn.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/page_turn.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  },
+  {
+    "id": "everyday_neighbourhood",
+    "storyId": "shared",
+    "version": 1,
+    "category": "opening",
+    "assetType": "svg",
+    "source": "assets/animations/everyday_neighbourhood.svg",
+    "poster": "assets/posters/everyday_neighbourhood.svg",
+    "durationMs": 4500,
+    "loop": false,
+    "skippable": true,
+    "replayable": true,
+    "fallbackScene": "An ordinary moment becomes another page in the story.",
+    "characterIds": [
+      "player",
+      "partner"
+    ],
+    "environmentId": "home",
+    "nextAction": "dialogue",
+    "title": "The quieter parts of life",
+    "description": "An ordinary moment becomes another page in the story.",
+    "support": "partner",
+    "status": "available",
+    "ambient": {
+      "durationMs": 4000,
+      "loop": true
+    },
+    "outcome": {
+      "durationMs": 3500
+    },
+    "completion": {
+      "durationMs": 8000
+    },
+    "variants": {
+      "opening": {
+        "source": "assets/animations/everyday_neighbourhood.svg"
+      },
+      "ambient": {
+        "source": "assets/animations/everyday_neighbourhood.svg",
+        "durationMs": 4000,
+        "loop": true
+      },
+      "outcomes": {
+        "source": "assets/animations/everyday_neighbourhood.svg",
+        "durationMs": 3500,
+        "renderer": "option-props"
+      },
+      "completion": {
+        "source": "assets/animations/milestone_completion.svg",
+        "durationMs": 8000
+      },
+      "reducedMotion": {
+        "poster": "assets/posters/everyday_neighbourhood.svg"
+      }
+    },
+    "reducedMotion": "static-key-pose"
+  }
+]

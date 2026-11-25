@@ -1,0 +1,158 @@
+{
+  "measuredAt": "2026-11-26",
+  "backgroundBytes": 335729,
+  "assets": [
+    {
+      "id": "pregnancy_test_purchase",
+      "sourceBytes": 7182,
+      "posterBytes": 133105,
+      "settingBytes": 94440,
+      "durationMs": 4300
+    },
+    {
+      "id": "pregnancy_test_positive",
+      "sourceBytes": 7458,
+      "posterBytes": 133381,
+      "settingBytes": 94440,
+      "durationMs": 7000
+    },
+    {
+      "id": "pregnancy_consultation",
+      "sourceBytes": 7694,
+      "posterBytes": 121355,
+      "settingBytes": 85245,
+      "durationMs": 6500
+    },
+    {
+      "id": "pregnancy_twins_reveal",
+      "sourceBytes": 7760,
+      "posterBytes": 121421,
+      "settingBytes": 85245,
+      "durationMs": 7500
+    },
+    {
+      "id": "baby_preparation",
+      "sourceBytes": 7363,
+      "posterBytes": 133286,
+      "settingBytes": 94440,
+      "durationMs": 5500
+    },
+    {
+      "id": "car_showroom",
+      "sourceBytes": 7667,
+      "posterBytes": 133466,
+      "settingBytes": 94349,
+      "durationMs": 6000
+    },
+    {
+      "id": "car_delivery",
+      "sourceBytes": 7881,
+      "posterBytes": 133680,
+      "settingBytes": 94349,
+      "durationMs": 6500
+    },
+    {
+      "id": "car_maintenance",
+      "sourceBytes": 7554,
+      "posterBytes": 133353,
+      "settingBytes": 94349,
+      "durationMs": 5500
+    },
+    {
+      "id": "car_battery_failure",
+      "sourceBytes": 7705,
+      "posterBytes": 133504,
+      "settingBytes": 94349,
+      "durationMs": 6500
+    },
+    {
+      "id": "property_showroom",
+      "sourceBytes": 7394,
+      "posterBytes": 109128,
+      "settingBytes": 76302,
+      "durationMs": 6000
+    },
+    {
+      "id": "property_water_leak",
+      "sourceBytes": 8262,
+      "posterBytes": 109996,
+      "settingBytes": 76302,
+      "durationMs": 6500
+    },
+    {
+      "id": "travel_departure",
+      "sourceBytes": 7298,
+      "posterBytes": 133221,
+      "settingBytes": 94440,
+      "durationMs": 5000
+    },
+    {
+      "id": "wedding_planning",
+      "sourceBytes": 7390,
+      "posterBytes": 133313,
+      "settingBytes": 94440,
+      "durationMs": 5500
+    },
+    {
+      "id": "business_first_order",
+      "sourceBytes": 7277,
+      "posterBytes": 109011,
+      "settingBytes": 76302,
+      "durationMs": 5500
+    },
+    {
+      "id": "education_new_page",
+      "sourceBytes": 7260,
+      "posterBytes": 133183,
+      "settingBytes": 94440,
+      "durationMs": 5000
+    },
+    {
+      "id": "living_move_in",
+      "sourceBytes": 7304,
+      "posterBytes": 109038,
+      "settingBytes": 76302,
+      "durationMs": 5500
+    },
+    {
+      "id": "retirement_morning",
+      "sourceBytes": 7478,
+      "posterBytes": 133401,
+      "settingBytes": 94440,
+      "durationMs": 5000
+    },
+    {
+      "id": "emergency_small_surprise",
+      "sourceBytes": 7490,
+      "posterBytes": 109224,
+      "settingBytes": 76302,
+      "durationMs": 5000
+    },
+    {
+      "id": "milestone_completion",
+      "sourceBytes": 7295,
+      "posterBytes": 133218,
+      "settingBytes": 94440,
+      "durationMs": 8000
+    },
+    {
+      "id": "page_turn",
+      "sourceBytes": 7281,
+      "posterBytes": 133204,
+      "settingBytes": 94440,
+      "durationMs": 2000
+    },
+    {
+      "id": "everyday_neighbourhood",
+      "sourceBytes": 7308,
+      "posterBytes": 133231,
+      "settingBytes": 94440,
+      "durationMs": 4500
+    }
+  ],
+  "totalUniqueSceneBytes": 493030,
+  "sourceSvgBytes": 157301,
+  "posterBytes": 2655719,
+  "settingBytes": 350336,
+  "note": "Encoded file sizes, not a network-speed or playback guarantee. Runtime uses the shared rig and one cached atlas; model sheets are not loaded by gameplay."
+}

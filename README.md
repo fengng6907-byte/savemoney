@@ -1,4 +1,4 @@
-# Save Your Story V2
+# Save Your Story V2.1 — Animated Storybook
 
 **Virtual expenses become real savings.** A cozy virtual life simulation that turns fictional incidents into affordable savings challenges. Players do not need to intend to buy a car, own property, marry or have children in reality.
 
@@ -15,7 +15,15 @@ npm test
 
 Open http://127.0.0.1:4173. Use an HTTP server rather than opening index.html directly, because the app uses ES modules.
 
-The 67 automated checks cover legacy functionality, complete V2 journeys for ten stories in both countries, goal completion, safe reservations, persistent outcomes, duplicate receipts and unlocks, partial contributions, actual-income changes, V1 migration and static hosting.
+The 84 automated checks cover legacy functionality, complete V2 journeys for ten stories in both countries, goal completion, safe reservations, persistent outcomes, duplicate receipts and unlocks, partial contributions, actual-income changes, V1 migration and static hosting.
+
+## Animation release
+
+Open **My story characters** to customize the player and partner, or **Animation studio** to preview the 21 available compositions. The first family incident starts with a test purchase, then a seven-second positive-test outcome. Existing saved twins results select the clinic reveal. Car battery and home leak responses retain itemized country costs.
+
+Play/pause, replay, skip, subtitles, still scenes, asset-error continuation and offscreen pause are included. The current assets are SVG/CSS scenes with original painted settings; pre-rendered films and voice tracks are not included. The other stories use reusable stage templates. Playback cannot credit savings or unlock an incident.
+
+Run `npm run build:art` to rebuild committed art exports. Read [ANIMATION_INTEGRATION.md](ANIMATION_INTEGRATION.md), [CHARACTER_BIBLE.md](CHARACTER_BIBLE.md) and [ART_PROVENANCE.md](ART_PROVENANCE.md) for the manifest, real asset inventory, storyboards, production prompt and extension instructions.
 
 ## V2 gameplay
 
@@ -23,7 +31,7 @@ The 67 automated checks cover legacy functionality, complete V2 journeys for ten
 2. Enter actual income and commitments only to keep the game comfortable. Virtual events never change actual income or employment.
 3. Choose one virtual life from the ten-story library.
 4. Reveal a sealed incident. The director considers remaining goal, time, capacity, choices, virtual assets, life stage, country prices and incident history. Future incidents remain hidden.
-5. Make a meaningful decision. Review the estimated market cost, virtual expense and assigned real savings separately. Choose an affordable slice or spread a share over eligible Savings Days.
+5. Watch or skip the opening, read the dialogue, choose a response and watch its outcome. Make a meaningful decision. Review the estimated market cost, virtual expense and assigned real savings separately. Choose an affordable slice or spread a share over eligible Savings Days.
 6. Save in your own bank account. Upload a PNG, JPG or PDF receipt and explicitly review it. Partial and grouped deposits are supported; pending evidence does not count.
 7. Satisfy the current checkpoint, turn the page and reveal the next surprise. Savings Day is the 8th of each month; early contributions are welcome.
 8. On goal completion, celebrate recorded savings and review virtual expenses and decisions. Continue the story with no additional mandatory savings. A new goal is voluntary and starts with no reused receipt credit.
@@ -62,7 +70,7 @@ The bilingual shell, local receipt storage, profile versioning, emergency alloca
 
 Vercel imports the repository root. vercel.json selects Other (framework: null), skips install / build commands, publishes dist, and gives .mjs files a JavaScript MIME type. The earlier blank-deployment fix is retained. server.mjs is a cross-platform local preview server only.
 
-Any static host can serve dist. Original SVG illustrations need no external image service; optional Google Fonts have system-font fallbacks.
+Any static host can serve dist. Committed painted JPEG settings and original SVG rigs need no runtime image service; optional Google Fonts have system-font fallbacks.
 
 ## Design documents
 

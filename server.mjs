@@ -3,7 +3,7 @@ import {readFile} from 'node:fs/promises';
 import * as path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
-const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.js':'text/javascript; charset=utf-8','.svg':'image/svg+xml','.json':'application/json; charset=utf-8'};
+const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.js':'text/javascript; charset=utf-8','.svg':'image/svg+xml','.jpg':'image/jpeg','.webp':'image/webp','.webm':'video/webm','.mp4':'video/mp4','.gif':'image/gif','.json':'application/json; charset=utf-8'};
 
 // Use the platform's path rules: Linux uses '/', while Windows uses '\\'.
 export function resolveAssetPath(root,pathname,pathApi=path){
@@ -28,5 +28,6 @@ export function createStaticServer(root=path.resolve('dist')){
 }
 
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
-  createStaticServer().listen(4173,'127.0.0.1',()=>console.log('Local: http://127.0.0.1:4173'));
+  const port=Number(process.argv[2]||4173);
+  createStaticServer().listen(port,'127.0.0.1',()=>console.log('Local: http://127.0.0.1:'+port));
 }

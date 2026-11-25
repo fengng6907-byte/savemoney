@@ -1,0 +1,764 @@
+[
+  {
+    "id": "pregnancy_test_purchase",
+    "environment": "home",
+    "cast": [
+      "player",
+      "assistant"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "A test kit on the table. Nothing has been confirmed."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Ari",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 4300,
+    "staticFallback": "A test kit on the table. Nothing has been confirmed."
+  },
+  {
+    "id": "pregnancy_test_positive",
+    "environment": "home",
+    "cast": [
+      "player",
+      "partner"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "anticipation",
+        "speaker": "Alex",
+        "text": "One quiet moment. One little test."
+      },
+      {
+        "at": 1000,
+        "mood": "reveal",
+        "speaker": "Sam",
+        "text": "Wait... is that what I think it is?"
+      },
+      {
+        "at": 2000,
+        "mood": "surprise",
+        "speaker": "Alex",
+        "text": "Looks like our little adventure is about to begin."
+      },
+      {
+        "at": 3000,
+        "mood": "happy",
+        "speaker": "Narrator",
+        "text": "In this fictional life, a new chapter begins."
+      },
+      {
+        "at": 4500,
+        "mood": "celebrate",
+        "speaker": "Sam",
+        "text": "We’ll learn, one step at a time."
+      },
+      {
+        "at": 5500,
+        "mood": "embrace",
+        "speaker": "Narrator",
+        "text": "A warm embrace, and a story still to be discovered."
+      }
+    ],
+    "durationMs": 7000,
+    "staticFallback": "Wait… is that what I think it is?"
+  },
+  {
+    "id": "pregnancy_consultation",
+    "environment": "clinic",
+    "cast": [
+      "player",
+      "doctor"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "A fictional clinic visit opens a conversation about care."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Dr. Hana",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 6500,
+    "staticFallback": "A fictional clinic visit opens a conversation about care."
+  },
+  {
+    "id": "pregnancy_twins_reveal",
+    "environment": "clinic",
+    "cast": [
+      "player",
+      "doctor"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "Two illustrative shapes appear on the story ultrasound."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "reveal",
+        "speaker": "Dr. Hana",
+        "text": "Two little ones in this story. We’ll talk through the possibilities."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 7500,
+    "staticFallback": "Two illustrative shapes appear on the story ultrasound."
+  },
+  {
+    "id": "baby_preparation",
+    "environment": "home",
+    "cast": [
+      "player",
+      "partner"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "A corner becomes a nursery, one thoughtful item at a time."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Sam",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 5500,
+    "staticFallback": "A corner becomes a nursery, one thoughtful item at a time."
+  },
+  {
+    "id": "car_showroom",
+    "environment": "showroom",
+    "cast": [
+      "player",
+      "agent"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "A salesperson shows you around a virtual car."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Mei",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 6000,
+    "staticFallback": "A salesperson shows you around a virtual car."
+  },
+  {
+    "id": "car_delivery",
+    "environment": "showroom",
+    "cast": [
+      "player",
+      "agent"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "A virtual handover. The road ahead brings responsibilities."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Mei",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 6500,
+    "staticFallback": "A virtual handover. The road ahead brings responsibilities."
+  },
+  {
+    "id": "car_maintenance",
+    "environment": "showroom",
+    "cast": [
+      "player",
+      "mechanic"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "A mechanic checks the car and explains the work."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Ravi",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 5500,
+    "staticFallback": "A mechanic checks the car and explains the work."
+  },
+  {
+    "id": "car_battery_failure",
+    "environment": "showroom",
+    "cast": [
+      "player",
+      "mechanic"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "You try the ignition. The dashboard flickers, then falls quiet."
+      },
+      {
+        "at": 1100,
+        "mood": "ignition",
+        "speaker": "Alex",
+        "text": "Let’s try the ignition."
+      },
+      {
+        "at": 2300,
+        "mood": "failure",
+        "speaker": "Ravi",
+        "text": "It won’t start. Let’s check what is actually needed."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 6500,
+    "staticFallback": "You try the ignition. The dashboard flickers, then falls quiet."
+  },
+  {
+    "id": "property_showroom",
+    "environment": "apartment",
+    "cast": [
+      "player",
+      "agent"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "The agent unfolds a floor plan. You imagine a life here."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Mei",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 6000,
+    "staticFallback": "The agent unfolds a floor plan. You imagine a life here."
+  },
+  {
+    "id": "property_water_leak",
+    "environment": "apartment",
+    "cast": [
+      "player",
+      "contractor"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "Rain taps the window. A drip sends you looking for a bucket."
+      },
+      {
+        "at": 1100,
+        "mood": "drip",
+        "speaker": "Alex",
+        "text": "Is that a drip? I’ll bring the bucket."
+      },
+      {
+        "at": 2300,
+        "mood": "bucket",
+        "speaker": "Idris",
+        "text": "We can inspect the source and prepare a separate quotation."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 6500,
+    "staticFallback": "Rain taps the window. A drip sends you looking for a bucket."
+  },
+  {
+    "id": "travel_departure",
+    "environment": "home",
+    "cast": [
+      "player",
+      "partner"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "A suitcase closes. A new place is waiting."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Sam",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 5000,
+    "staticFallback": "A suitcase closes. A new place is waiting."
+  },
+  {
+    "id": "wedding_planning",
+    "environment": "home",
+    "cast": [
+      "player",
+      "agent"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "Two people make room for the details they care about."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Mei",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 5500,
+    "staticFallback": "Two people make room for the details they care about."
+  },
+  {
+    "id": "business_first_order",
+    "environment": "apartment",
+    "cast": [
+      "player",
+      "assistant"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "An assistant brings a parcel and a new possibility."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Ari",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 5500,
+    "staticFallback": "An assistant brings a parcel and a new possibility."
+  },
+  {
+    "id": "education_new_page",
+    "environment": "home",
+    "cast": [
+      "player",
+      "assistant"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "You open a letter and gather your books."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Ari",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 5000,
+    "staticFallback": "You open a letter and gather your books."
+  },
+  {
+    "id": "living_move_in",
+    "environment": "apartment",
+    "cast": [
+      "player",
+      "partner"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "Boxes at the door. A room waiting to become home."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Sam",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 5500,
+    "staticFallback": "Boxes at the door. A room waiting to become home."
+  },
+  {
+    "id": "retirement_morning",
+    "environment": "home",
+    "cast": [
+      "player",
+      "family"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "A quiet cup of tea and a conversation with family."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "June",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 5000,
+    "staticFallback": "A quiet cup of tea and a conversation with family."
+  },
+  {
+    "id": "emergency_small_surprise",
+    "environment": "apartment",
+    "cast": [
+      "player",
+      "contractor"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "Something needs care. You pause and look at the options."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Idris",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 5000,
+    "staticFallback": "Something needs care. You pause and look at the options."
+  },
+  {
+    "id": "milestone_completion",
+    "environment": "home",
+    "cast": [
+      "player",
+      "partner"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "happy",
+        "speaker": "Narrator",
+        "text": "A page lived. Your savings checkpoint is complete."
+      },
+      {
+        "at": 2500,
+        "mood": "celebrate",
+        "speaker": "Alex",
+        "text": "One small step, and a little more confidence."
+      },
+      {
+        "at": 5500,
+        "mood": "happy",
+        "speaker": "Narrator",
+        "text": "The next page stays sealed until you choose to open it."
+      }
+    ],
+    "durationMs": 8000,
+    "staticFallback": "A warm celebration of a completed savings checkpoint."
+  },
+  {
+    "id": "page_turn",
+    "environment": "home",
+    "cast": [
+      "player",
+      "partner"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "A quiet transition between story pages."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Sam",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 2000,
+    "staticFallback": "A quiet transition between story pages."
+  },
+  {
+    "id": "everyday_neighbourhood",
+    "environment": "home",
+    "cast": [
+      "player",
+      "partner"
+    ],
+    "frames": [
+      {
+        "at": 0,
+        "mood": "enter",
+        "speaker": "Narrator",
+        "text": "An ordinary moment becomes another page in the story."
+      },
+      {
+        "at": 1100,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "Let’s have a closer look."
+      },
+      {
+        "at": 2300,
+        "mood": "gesture",
+        "speaker": "Sam",
+        "text": "There are a few ways to approach this."
+      },
+      {
+        "at": 4000,
+        "mood": "consider",
+        "speaker": "Alex",
+        "text": "We can choose the next step together."
+      }
+    ],
+    "durationMs": 4500,
+    "staticFallback": "An ordinary moment becomes another page in the story."
+  }
+]
