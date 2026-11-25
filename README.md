@@ -12,6 +12,10 @@ npm run dev
 
 Open http://127.0.0.1:4173. Use an HTTP server rather than opening index.html directly, because the app uses ES modules. Any static host can serve `dist/`.
 
+### Deploy on Vercel
+
+Import this repository with the repository root as **Root Directory**. The checked-in `vercel.json` selects **Other** (`framework: null`), skips installation and building, and publishes **`dist`**. ES modules are served with a JavaScript content type. Do not select the Node.js backend preset or deploy `server.mjs`; that file is only the cross-platform local preview server. Pushes to the connected production branch deploy these settings automatically.
+
 ```sh
 npm test
 ```
@@ -59,7 +63,7 @@ Six further stories have bilingual five-act definitions using the same choice, c
 
 ## Verification
 
-23 automated tests pass. Coverage includes both-country full car / travel / twin-pregnancy completion, persistent outcomes, historical cost versions, FX direction, annual provisions, loan balances, deposit deduplication, pending review gates, split allocations, effective-date profiles, changed capacity and backup round trips.
+26 automated tests pass. Coverage includes Linux and Windows asset-path handling, Vercel static output configuration, both-country full car / travel / twin-pregnancy completion, persistent outcomes, historical cost versions, FX direction, annual provisions, loan balances, deposit deduplication, pending review gates, split allocations, effective-date profiles, changed capacity and backup round trips.
 
 Browser checks cover onboarding, all ten library entries, car preview and lock, a price-changing choice, pending contribution review, explicit local confirmation, chapter unlock, reload persistence, finance calculations, Chinese gameplay and a 390-pixel mobile layout.
 
