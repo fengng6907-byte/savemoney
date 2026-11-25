@@ -1,4 +1,5 @@
 import {price,carDefaults,chaptersFor,EVENTS} from './data.mjs';
+import {validateGameState} from './game-schema.mjs';
 export const SCHEMA=1;
 export const round=n=>Math.round((Number(n)||0)*100)/100;
 export const today=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Singapore',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
@@ -45,12 +46,12 @@ const title=x=>x&&typeof x.en==='string'&&typeof x.zh==='string';
 if(!s||s.schema!==SCHEMA||typeof s.name!=='string'||s.name.length>80||!['en','zh'].includes(s.language)||!Array.isArray(s.versions)||!Array.isArray(s.sessions)||!Array.isArray(s.ledger)||!s.emergency||!amount(s.emergency.monthly)||!amount(s.emergency.months)||s.emergency.months>120||typeof s.emergency.enabled!=='boolean')fail();
 const copy=initialState(),versions=new Set(),sessions=new Set(),transactions=new Set(),refs=new Set(),hashes=new Set();
 for(const p of s.versions){if(typeof p.id!=='string'||versions.has(p.id)||typeof p.created!=='string'||p.currency!==(p.country==='SG'?'SGD':'MYR')||!validDate(p.effective))fail();profileVersion(copy,p);versions.add(p.id);}
-for(const x of s.sessions){if(!['car','travel','baby'].includes(x.story)||!['MY','SG'].includes(x.country)||x.currency!==(x.country==='MY'?'MYR':'SGD')||typeof x.id!=='string'||sessions.has(x.id)||!versions.has(x.profileId)||!validDate(x.created)||!Number.isInteger(x.index)||!amount(x.clock)||!Array.isArray(x.history)||!x.events||!x.costOverrides||!x.config||typeof x.completed!=='boolean')fail();
+for(const x of s.sessions){if(!(x.mode==='v2'?['car','travel','baby','home','wedding','business','education','living','retirement','emergency']:['car','travel','baby']).includes(x.story)||!['MY','SG'].includes(x.country)||(x.mode==='v2'?!['MYR','SGD'].includes(x.currency):x.currency!==(x.country==='MY'?'MYR':'SGD'))||typeof x.id!=='string'||sessions.has(x.id)||!versions.has(x.profileId)||!validDate(x.created)||!Number.isInteger(x.index)||!amount(x.clock)||!Array.isArray(x.history)||!x.events||!x.costOverrides||!x.config||typeof x.completed!=='boolean')fail();
 if(x.story==='car'){for(const k of Object.keys(carDefaults(x.country)).filter(k=>typeof carDefaults(x.country)[k]==='number'))if(!amount(x.config[k]))fail();if(x.config.down>x.config.price||x.config.years<1||!['flat','reducing'].includes(x.config.method))fail();}
 if(x.story==='travel'&&(!amount(x.config.days)||x.config.days<30||x.config.days>365||!amount(x.config.travellers)||x.config.travellers<1))fail();
-const count=chaptersFor(x.story,x.country,x.config).length;if(x.index>count||x.history.length!==x.index)fail();
+const count=x.mode==='v2'?120:chaptersFor(x.story,x.country,x.config).length;if(x.index>count||x.history.length!==x.index)fail();
 for(const h of [...x.history,...(x.current?[x.current]:[])]){if(!Number.isInteger(h.index)||!title(h.title)||!h.choice||!title(h.choice.title)||!title(h.choice.detail)||!amount(h.target)||!amount(h.requiredTotal)||!amount(h.simulatedCost)||!Array.isArray(h.items)||!versions.has(h.profileId))fail();for(const i of h.items)if(!title(i.label)||!amount(i.typical)||!amount(i.quantity)||(i.quote!==null&&!amount(i.quote)))fail();}
 sessions.add(x.id);}
 for(const t of s.ledger){if(!['pending','confirmed','rejected'].includes(t.status)||!['MYR','SGD'].includes(t.currency)||typeof t.id!=='string'||transactions.has(t.id)||typeof t.reference!=='string'||!validDate(t.date)||![t.amount,t.main,t.emergency].every(amount)||t.main+t.emergency>t.amount+.001||(t.main>0&&!sessions.has(t.storyId)))fail();transactions.add(t.id);if(t.status!=='rejected'){const ref=t.reference.trim().toLowerCase();if(refs.has(ref)||(t.hash&&hashes.has(t.hash)))fail();refs.add(ref);if(t.hash)hashes.add(t.hash);}}
-if(s.activeId&&!sessions.has(s.activeId))fail();return s;
+if(s.activeId&&!sessions.has(s.activeId))fail();return validateGameState(s);
 }

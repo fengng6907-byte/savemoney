@@ -1,74 +1,74 @@
-# Save Your Story V1
+# Save Your Story V2
 
-A playable, mobile-first life-simulation web app. Original SVG town and animated scenes, a chapter journal, real-life financial profiles, and a distinct savings ledger. English and Simplified Chinese.
+**Virtual expenses become real savings.** A cozy virtual life simulation that turns fictional incidents into affordable savings challenges. Players do not need to intend to buy a car, own property, marry or have children in reality.
 
-## Run
+Live app: https://savemoney-alpha.vercel.app
 
-Requires Node.js 20 or later. No packages need installing.
+## Run and test
+
+Requires Node.js 20 or later. No dependencies need installing.
 
 ```sh
 npm run dev
-```
-
-Open http://127.0.0.1:4173. Use an HTTP server rather than opening index.html directly, because the app uses ES modules. Any static host can serve `dist/`.
-
-### Deploy on Vercel
-
-Import this repository with the repository root as **Root Directory**. The checked-in `vercel.json` selects **Other** (`framework: null`), skips installation and building, and publishes **`dist`**. ES modules are served with a JavaScript content type. Do not select the Node.js backend preset or deploy `server.mjs`; that file is only the cross-platform local preview server. Pushes to the connected production branch deploy these settings automatically.
-
-```sh
 npm test
 ```
 
-## Playing
+Open http://127.0.0.1:4173. Use an HTTP server rather than opening index.html directly, because the app uses ES modules.
 
-1. Choose **Begin your story**. Enter a local demo, language, country and income currency. Sample figures are available through an explicitly labelled button; replace them when using the journal personally.
-2. Enter net income, fixed commitments, essentials, optional spending, loan repayments, separate savings and reserves, and an optional emergency contribution. Each expense belongs in only one category.
-3. Preview and configure a story. Review the duration, costs and capacity before locking one main story.
-4. Read the scene and make a decision. Cost, financial-profile and challenge snapshots are saved.
-5. Advance the **story calendar** to the checkpoint. This never changes actual dates, income or balances.
-6. Transfer to your own bank account outside the app. Record a new transfer or grouped batch, optionally attach evidence, then explicitly self-confirm the local record. Pending and rejected records do not count.
-7. Turn the page once the decision, event, story date and contribution conditions are met. You can lower a checkpoint or extend preparation when circumstances change. A reduced target never establishes affordability.
+The 67 automated checks cover legacy functionality, complete V2 journeys for ten stories in both countries, goal completion, safe reservations, persistent outcomes, duplicate receipts and unlocks, partial contributions, actual-income changes, V1 migration and static hosting.
 
-## Playable experiences
+## V2 gameplay
 
-- **My First Ride:** 24 monthly chapters; flat-rate and reducing-balance calculations; upfront, monthly and annual provisions; replaced transport offset; inspection and persisted mechanical condition; configured warranty; ownership choices; virtual depreciation and remaining loan principal. Completion of the story does not imply repayment of a longer loan. The ownership phase has 20 loan payments after collection in chapter 5; the standalone calculator also shows a separate 24-payment comparison.
-- **Somewhere New:** 8 chapters over 30–365 days; destination, travellers, trip length and custom budgets; separate flight / hotel deadlines; existing trip savings; cumulative daily need; grouped evidence; a persisted weather branch. Budget inputs are explicit quotations; destination and trip length do not query live travel prices.
-- **A Little New Life:** 45 chapters, beginning with a test kit, through pregnancy, birth, infant care, toddler life and a third birthday. A 99% single / 1% twin game roll is selected once per session; known twins can be configured. Applicable cost multipliers differ by category. Delivery / postpartum deposits and balances split a single total rather than duplicate it. Care setting, delivery scene month and quotations are configurable. Budget scenes are not clinical guidance.
-- **A Safety Net:** a parallel, adjustable savings mode. Contribution and expense-coverage target, separate allocations and reserve balances. It does not block the main story. One transfer may be split, but total allocations cannot exceed its amount.
+1. Set your total savings goal, duration, country, MYR or SGD goal currency, comfortable total monthly savings and optional emergency contribution.
+2. Enter actual income and commitments only to keep the game comfortable. Virtual events never change actual income or employment.
+3. Choose one virtual life from the ten-story library.
+4. Reveal a sealed incident. The director considers remaining goal, time, capacity, choices, virtual assets, life stage, country prices and incident history. Future incidents remain hidden.
+5. Make a meaningful decision. Review the estimated market cost, virtual expense and assigned real savings separately. Choose an affordable slice or spread a share over eligible Savings Days.
+6. Save in your own bank account. Upload a PNG, JPG or PDF receipt and explicitly review it. Partial and grouped deposits are supported; pending evidence does not count.
+7. Satisfy the current checkpoint, turn the page and reveal the next surprise. Savings Day is the 8th of each month; early contributions are welcome.
+8. On goal completion, celebrate recorded savings and review virtual expenses and decisions. Continue the story with no additional mandatory savings. A new goal is voluntary and starts with no reused receipt credit.
 
-Six further stories have bilingual five-act definitions using the same choice, cost, event and unlock contracts, plus indicative budget previews. They are labelled **In development** and cannot be started: wedding, first property, entrepreneurship, education, independent living and retirement. A separate property calculator and new-build / subsale route preview are available.
+## Virtual lives
 
-## Data and financial boundaries
+- My First Ride: 24 main chapters, new / used vehicles, inspection, policy scope, collection, instalments, fuel, maintenance, renewals and continuing loan responsibility.
+- Somewhere New: eight main trip chapters, destination, travellers, bookings, itinerary, contingency and homecoming.
+- A Little New Life: 45 main chapters beginning with a pregnancy test, then confirmation, pregnancy, birth, infant / toddler life and a third birthday. Twins use one persisted 1% game roll at confirmation, unless preconfigured. This is not a medical statistic or clinical timetable.
+- A Safety Net: household surprises, alongside the separate optional actual emergency plan.
+- Our Next Chapter: proposal, family preferences, deposits / balances, optional traditions, wedding and honeymoon.
+- A Place Called Home: new / subsale branches, inspection, financing / contracts, keys, hidden defects, renovation, furniture and maintenance.
+- My Own Business: idea, registration, equipment, launch, refunds and review. Fictional profits never become actual personal income.
+- A Brighter Future: application, tuition deposit / balance, equipment, term life, examination and graduation.
+- On My Own: shared / whole home, tenancy deposit, moving, rent / groceries / utilities, repairs and housewarming.
+- A Peaceful Tomorrow: virtual retirement routine, care allowances, community activities and household surprises.
 
-- Local demo only: no public user accounts, bank connections, server database, trusted external verification, cross-device synchronization, real notifications or money movement.
-- Financial profiles, random outcomes, decisions and ledger records use `localStorage`. Receipt files (PNG, JPG, PDF, up to 5 MB) use local IndexedDB. The hosted Site has owner-only access; it does not receive personal records or receipt files.
-- Evidence review is explicitly **local self-confirmation**, not independent or bank verification. Duplicate reference and file-hash checks prevent accidental repeated entries, but do not prove a real transaction occurred. Local records are user-editable through browser tools and are not tamper-proof.
-- Profiles are versioned by effective date; actual income changes only through explicit edits. Historical chapter snapshots are preserved. Balance updates exclude already-included deposits so they are not counted again.
-- Existing available savings and emergency reserves are separate opening balances. Newly recorded contributions must not already be included in those balances. Only allocated, confirmed amounts contribute to goal progress; unallocated amounts remain visible but do not unlock chapters.
-- Cross-border income uses a positive, editable, dated **MYR per SGD** assumption. There is no live exchange-rate feed. Story expenses and contribution records retain their own currency.
-- All seeded prices are independently set Malaysian / Singaporean **illustrative assumptions**, prepared 25 November 2026. No seed is claimed to be a verified current provider quotation. User-entered quotations take precedence. Every cost carries country, currency, range, quantity, frequency, date, source and verification fields. Unknown sources and verification dates are null.
-- Source links in Finance provide calculation and care context only: MoneySense, Singapore Ministry of Transport, EPF and Malaysia MOH. Property duties, grants, CPF use and individual eligibility require external checks and user quotations; the calculator does not automatically apply legal rules.
-- Optional Google Fonts improve typography; readable system-font fallbacks work when unavailable. All illustrations are original inline SVG and do not depend on image generation or external images.
+Interludes add everyday, minor, milestone and rare incidents. At most one interlude occurs between main chapters. Different products, service scopes and quantities can change costs; the director never changes an identical item's unit price to fit a goal. Story time and actual Savings Day dates are separate clocks.
 
-## Architecture
+## Preserved data and functions
 
-- `dist/data.mjs`: independent cost seeds, story definitions and event rules.
-- `dist/future.mjs`: six nonplayable future stories with structured contracts.
-- `dist/engine.mjs`: pure finance, loan, snapshot, event, allocation, progression and backup validation functions.
-- `dist/art.mjs`: reusable original SVG scenes and illustration components.
-- `dist/app.mjs`: accessible UI, onboarding, forms, receipt storage and export / restore.
-- `dist/style.css`: responsive storybook theme, bottom mobile navigation, reduced-motion support.
-- `tests/`: engine regression checks and full simulated journey completion tests.
+The project and dependency-free stack are unchanged. The existing localStorage key is retained. V1 profiles, ledger records, decisions and receipt files are preserved, including prior twin outcomes. A conflicting pending V1 checkpoint is archived during migration; it does not become a compulsory new V2 challenge. Old contributions are not credited again.
 
-## Verification
+The bilingual shell, local receipt storage, profile versioning, emergency allocations, export / restore, privacy controls and optional virtual car / property calculators remain. Calculators are under My limits, outside the main gameplay loop.
 
-26 automated tests pass. Coverage includes Linux and Windows asset-path handling, Vercel static output configuration, both-country full car / travel / twin-pregnancy completion, persistent outcomes, historical cost versions, FX direction, annual provisions, loan balances, deposit deduplication, pending review gates, split allocations, effective-date profiles, changed capacity and backup round trips.
+## Financial and verification boundaries
 
-Browser checks cover onboarding, all ten library entries, car preview and lock, a price-changing choice, pending contribution review, explicit local confirmation, chapter unlock, reload persistence, finance calculations, Chinese gameplay and a 390-pixel mobile layout.
+- The app never receives, holds or transfers funds. Virtual expenses never deduct real savings or emergency reserves.
+- Goal, limit, pause, quotation and checkpoint changes require explicit actions and are audited. The capacity calculation protects essential spending.
+- Receipt checks cover file signatures, SHA-256 duplicates, references, allocation totals and explicit player review. This is local self-attestation, not independent verification or proof of bank settlement. No bank or external review service is connected.
+- Progress and profiles live in localStorage; receipt files live in local IndexedDB. There is no account backend, cross-device synchronization or tamper-proof server ledger. JSON backups exclude receipt files.
+- Seeded prices are independent country-specific illustrative assumptions, not verified provider quotes. Quotes may be edited before a decision; decided incident prices stay frozen.
+- Currency conversion uses the player's positive, dated MYR-per-SGD assumption, not a live feed. Actual transfers are recorded in their actual currency.
 
-## Production work still required
+## Deployment
 
-This is a complete local-demo gameplay build, not a production financial service. Before multi-user release: implement authenticated accounts, server-side authorization, a transactional ledger and audit trail, an actual evidence-review policy and service, encrypted storage / retention controls, cross-device backups, localization review, broader narrative / event variety, maintained provider quotations and country-specific professional review. Never infer actual savings from a simulated expense or fictional event.
+Vercel imports the repository root. vercel.json selects Other (framework: null), skips install / build commands, publishes dist, and gives .mjs files a JavaScript MIME type. The earlier blank-deployment fix is retained. server.mjs is a cross-platform local preview server only.
 
-The supplied development prompt ends mid-sentence in section 22, after “Used for cars,”. No missing later requirements were assumed to have been supplied.
+Any static host can serve dist. Original SVG illustrations need no external image service; optional Google Fonts have system-font fallbacks.
+
+## Design documents
+
+- [GAME_DESIGN.md](GAME_DESIGN.md): V2 philosophy, loop, clocks, director and completion.
+- [STORY_BIBLE.md](STORY_BIBLE.md): ten storylines, categories and continuity.
+- [ARCHITECTURE.md](ARCHITECTURE.md): modules, persistence, migration and transaction boundaries.
+- [SAVINGS_RULES.md](SAVINGS_RULES.md): capacity, schedules, evidence, adjustments and completion.
+
+V2 modules are goals.mjs, director.mjs, incidents.mjs, game-schema.mjs and v2-ui.mjs. Existing finance and V1 definitions remain in engine.mjs, data.mjs and future.mjs for compatibility.
